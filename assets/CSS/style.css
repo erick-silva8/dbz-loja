@@ -1,1 +1,49 @@
+.sobre-nos {
+display: flex;
+justify-content: center;
+grid: auto;
+padding: 50px;
+}
+
+.h3 {
+display: flex;
+justify-content: center;
+text-align: center;
+grid: auto;
+padding: 50px;   
+}
+
+.h4 {
+display: flex;
+justify-content: center;
+grid: auto;
+padding: 50px;   
+}
+
+/* Animação fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.mt-3 {
+    justify-content: center;
+}
+
+/* Estilo para campos nos modais */
+.modal-content input.form-control {
+  border: 1px solid #ffc107;
+}
+
+.modal-content .form-label {
+  font-weight: bold;
+}
+
+
 
