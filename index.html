@@ -1,58 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Loja Dragon Ball Z</title>
-  <!-- Bootstrap 5 CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- FONTE 'EUROSTILE EXTENDED' -->
+  <link href="https://use.typekit.net/gvp4xoa.css" rel="stylesheet" />
+  <!-- BOX ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
-  <!-- Navbar simples -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">DBZ Loja</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
-        </ul>
-        <div class="d-flex">
-          <button class="btn btn-outline-light me-2">👤 Login</button>
-          <button class="btn btn-warning">🛒 Carrinho</button>
+  <!-- Header Dragon Ball Z -->
+  <header class="header-custom">
+    <video class="banner-video-bg" src="assets/videos/banner-video.mp4" autoplay muted loop playsinline></video>
+    <!-- Navbar personalizada -->
+    <nav class="navbar-custom">
+      <div class="container-custom">
+        <a class="brand" href="#">
+          <img src="assets/images/Dragon_Ball_Z_logo.svg" alt="Logo Sayajins Store"
+            style="height:32px; vertical-align:middle; margin-right:8px;">
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="cadastro.html">Contato</a>
+        </div>
+        <div class="actions">
+          <a href="#" class="icon-login" title="Login"><i class='bx bx-log-in'></i></a>
+          <a href="#" class="icon-cart" title="Carrinho"><i class='bx bxs-cart'></i></a>
         </div>
       </div>
+    </nav>
+    <div class="header-content">
+      <div>
+        <h1 class="title">Sayajins Store</h1>
+        <p class="subtitle">Colecione Funkos Pop oficiais do universo Dragon Ball Z e traga seus personagens favoritos
+          para sua coleção!</p>
+        <a href="#produtos" class="btn-ver-produtos">Ver Produtos</a>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <main class="container my-5">
-    <h1 class="mb-4">Produtos — Loja Dragon Ball Z</h1>
-
-    <!-- Cards: Duplique este card 9x e troque imagem/descrição/valor -->
-    <div class="row g-3">
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card h-100">
-          <img src="assets/images/product-01.jpg" class="card-img-top" alt="Produto 1">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Figura Goku</h5>
-            <p class="card-text">Figura colecionável 20cm - edição especial.</p>
-            <div class="mt-auto d-flex justify-content-between align-items-center">
-              <span class="fw-bold">R$ 89,90</span>
-              <button class="btn btn-primary btn-sm">Adicionar</button>
-            </div>
+  <main class="main-custom">
+    <h1 id="produtos">Produtos — Loja Dragon Ball Z</h1>
+    <div class="produtos-grid">
+      <div class="produto-card">
+        <img src="assets/images/imgs DBZ/pops/goku pop.jpg" class="card-img" alt="Brinquedo Goku">
+        <div class="produto-info">
+          <h5>Funko pop Goku</h5>
+          <p>Funko pop Goku colecionável 10cm - edição #615.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 139,99</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
           </div>
         </div>
       </div>
-      <!-- repita até ter 9 cards -->
+      <div class="produto-card">
+       <img src="assets/images/imgs DBZ/pops/majin boo magro pop.webp" class="card-img" alt="Brinquedo Majin">
+        <div class="produto-info">
+          <h5>Funko pop Majin boo</h5>
+          <p>Funko pop Majin Buu (Super Form) Ghost Attack colecionável 9,5cm - edição especial #1464.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 309,99</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="produto-card">
+      <img src="assets/images/imgs DBZ/pops/beerus pop.jpg" class="card-img" alt="Brinquedo Beerus">
+        <div class="produto-info">
+          <h5>Funko pop Beerus</h5>
+          <p>Funko pop colecionável 10cm - edição exclusiva #120 Comic con 2016.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 1000,00</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="produto-card">
+        <img src="assets/images/imgs DBZ/pops/gohan pop.webp" class="card-img" alt="Brinquedo Gohan">
+        <div class="produto-info">
+          <h5>Funko Pop Son Gohan (Beast)</h5>
+          <p>Funko pop colecionável 10cm - edição limitada #1703.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 269,99</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="produto-card">
+        <img src="assets/images/imgs DBZ/pops/sheylong pop.jpg" class="card-img" alt="Brinquedo Shenlong">
+        <div class="produto-info">
+          <h5>Funko pop Shenlong</h5>
+          <p>Funko pop colecionável 25cm - edição #859.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 609,50</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="produto-card">
+         <img src="assets/images/imgs DBZ/pops/bulma pop.jpg" class="card-img" alt="Brinquedo da bulma">
+        <div class="produto-info">
+          <h5>Funko pop Bulma</h5>
+          <p>Funko pop colecionável 10cm - edição FYE exclusiva #1286.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 350,90</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="produto-card">
+        <img src="assets/images/imgs DBZ/pops/cell pop.webp" class="card-img" alt="Brinquedo Cell">
+        <div class="produto-info">
+          <h5>Funko pop Perfect Cell</h5>
+          <p>Funko pop colecionável 10cm - edição #13.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 139,90</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="produto-card">
+        <img src="assets/images/imgs DBZ/pops/trunks pop.jpg" class="card-img" alt="Brinquedo Trunks">
+        <div class="produto-info">
+          <h5>Funko pop Trunks & Gill</h5>
+          <p>Funko pop colecionável 15cm - edição #1630.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 165,00</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="produto-card">
+        <img src="assets/images/imgs DBZ/pops/vegeta pop.jpg" class="card-img" alt="Brinquedo Vegeta">
+        <div class="produto-info">
+          <h5>Funko pop Vegeta</h5>
+          <p>Funko pop colecionável 9,5cm - edição #10.</p>
+          <div class="produto-footer">
+            <span class="preco">R$ 190,90</span>
+            <button class="btn-adicionar">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
-            </html>
+
+</html>
