@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Loja Dragon Ball Z</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- FONTE 'EUROSTILE EXTENDED' -->
+  <link href="https://use.typekit.net/gvp4xoa.css" rel="stylesheet" />
+  <!-- BOX ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -22,11 +28,11 @@
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="sobre.html">Sobre</a>
-          <a href="cadastro.html">Cadastro</a>
+          <a href="cadastro.html">Contato</a>
         </div>
         <div class="actions">
-          <a href="#" class="icon-login" title="Login">👤</a>
-          <a href="#" class="icon-cart" title="Carrinho">🛒</a>
+          <a href="#" class="icon-login" title="Login"><i class='bx bx-log-in'></i></a>
+          <a href="#" class="icon-cart" title="Carrinho"><i class='bx bxs-cart'></i></a>
         </div>
       </div>
     </nav>
@@ -36,15 +42,6 @@
         <p class="subtitle">Colecione Funkos Pop oficiais do universo Dragon Ball Z e traga seus personagens favoritos
           para sua coleção!</p>
         <a href="#produtos" class="btn-ver-produtos">Ver Produtos</a>
-      </div>
-      <div class="banner-imgs">
-        <img src="assets/images/freeza-banner.webp"alt="Freeza" class="banner-img active">
-        <img src="assets/images/goku-banner.png" alt="Goku" class="banner-img">
-        <img src="assets/images/vegeta-banner.png" alt="Vegeta" class="banner-img">
-        <img src="assets/images/gohan-banner.png" alt="Vegeta" class="banner-img">
-        <img src="assets/images/majin-boo-banner.png" alt="Vegeta" class="banner-img">
-        <img src="assets/images/kuririn-banner.png" alt="Vegeta" class="banner-img">
-        <img src="assets/images/shenlong-banner.png" alt="Vegeta" class="banner-img">
       </div>
     </div>
   </header>
@@ -64,7 +61,7 @@
         </div>
       </div>
       <div class="produto-card">
-       <img src="assets/images/imgs DBZ/pops/majin boo magro pop.webp" class="card-img-mjb" alt="Brinquedo Majin">
+       <img src="assets/images/imgs DBZ/pops/majin boo magro pop.webp" class="card-img" alt="Brinquedo Majin">
         <div class="produto-info">
           <h5>Funko pop Majin boo</h5>
           <p>Funko pop Majin Buu (Super Form) Ghost Attack colecionável 9,5cm - edição especial #1464.</p>
@@ -75,7 +72,7 @@
         </div>
       </div>
       <div class="produto-card">
-      <img src="assets/images/imgs DBZ/pops/beerus pop.jpg" class="card-img-bee" alt="Brinquedo Beerus">
+      <img src="assets/images/imgs DBZ/pops/beerus pop.jpg" class="card-img" alt="Brinquedo Beerus">
         <div class="produto-info">
           <h5>Funko pop Beerus</h5>
           <p>Funko pop colecionável 10cm - edição exclusiva #120 Comic con 2016.</p>
@@ -86,7 +83,7 @@
         </div>
       </div>
       <div class="produto-card">
-        <img src="assets/images/imgs DBZ/pops/gohan pop.webp" class="card-img-gohan" alt="Brinquedo Gohan">
+        <img src="assets/images/imgs DBZ/pops/gohan pop.webp" class="card-img" alt="Brinquedo Gohan">
         <div class="produto-info">
           <h5>Funko Pop Son Gohan (Beast)</h5>
           <p>Funko pop colecionável 10cm - edição limitada #1703.</p>
@@ -97,7 +94,7 @@
         </div>
       </div>
       <div class="produto-card">
-        <img src="assets/images/imgs DBZ/pops/sheylong pop.jpg" class="card-img-shenlong" alt="Brinquedo Shenlong">
+        <img src="assets/images/imgs DBZ/pops/sheylong pop.jpg" class="card-img" alt="Brinquedo Shenlong">
         <div class="produto-info">
           <h5>Funko pop Shenlong</h5>
           <p>Funko pop colecionável 25cm - edição #859.</p>
@@ -108,7 +105,7 @@
         </div>
       </div>
       <div class="produto-card">
-         <img src="assets/images/imgs DBZ/pops/bulma pop.jpg" class="card-img-bulma" alt="Brinquedo da bulma">
+         <img src="assets/images/imgs DBZ/pops/bulma pop.jpg" class="card-img" alt="Brinquedo da bulma">
         <div class="produto-info">
           <h5>Funko pop Bulma</h5>
           <p>Funko pop colecionável 10cm - edição FYE exclusiva #1286.</p>
@@ -119,7 +116,7 @@
         </div>
       </div>
       <div class="produto-card">
-        <img src="assets/images/imgs DBZ/pops/cell pop.webp" class="card-img-cell" alt="Brinquedo Cell">
+        <img src="assets/images/imgs DBZ/pops/cell pop.webp" class="card-img" alt="Brinquedo Cell">
         <div class="produto-info">
           <h5>Funko pop Perfect Cell</h5>
           <p>Funko pop colecionável 10cm - edição #13.</p>
@@ -130,7 +127,7 @@
         </div>
       </div>
       <div class="produto-card">
-        <img src="assets/images/imgs DBZ/pops/trunks pop.jpg" class="card-img-trunks" alt="Brinquedo Trunks">
+        <img src="assets/images/imgs DBZ/pops/trunks pop.jpg" class="card-img" alt="Brinquedo Trunks">
         <div class="produto-info">
           <h5>Funko pop Trunks & Gill</h5>
           <p>Funko pop colecionável 15cm - edição #1630.</p>
@@ -141,7 +138,7 @@
         </div>
       </div>
       <div class="produto-card">
-        <img src="assets/images/imgs DBZ/pops/vegeta pop.jpg" class="card-img-vgt" alt="Brinquedo Vegeta">
+        <img src="assets/images/imgs DBZ/pops/vegeta pop.jpg" class="card-img" alt="Brinquedo Vegeta">
         <div class="produto-info">
           <h5>Funko pop Vegeta</h5>
           <p>Funko pop colecionável 9,5cm - edição #10.</p>
