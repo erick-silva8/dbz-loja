@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayajins Store | Sobre Nós</title>
+
+  <!--boxicons-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+
+  <!--fonte-->
+<link href="https://use.typekit.net/gvp4xoa.css" rel="stylesheet" />
+
+<!-- Bootstrap 5 e JS-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Vídeo de fundo -->
+  <div class="video-bg">
+    <video src="video/banner-video.mp4" autoplay muted loop playsinline></video>
+  </div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar-custom">
+    <div class="container navbar-content">
+      <div class="brand">
+        <img src="assets/images/Dragon_Ball_Z_logo.svg" alt="Sayajins Store Logo" class="logo">
+      </div>
+  
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="#">Contato</a>
+      </div>
+  
+      <div class="actions">
+        <a href="#" class="icon-login" data-bs-toggle="modal" data-bs-target="#loginModal"><i class='bx bx-user'></i></a>
+        <a href="#" class="icon-cart" data-bs-toggle="modal" data-bs-target="#carrinhoModal">
+          <i class='bx bx-cart'></i>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  
+  <!-- Modal do Carrinho -->
+  <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="carrinhoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light border-warning">
+        <div class="modal-header border-bottom border-warning">
+          <h5 class="modal-title" id="carrinhoModalLabel">Carrinho</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">🛒 Seu carrinho está vazio no momento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Quem Somos?</h1>
+    <h3 class="text-center">
+      <br><br>
+      A Sayajins Store, criada em 2025, nasceu da fusão entre paixão, criatividade e poder sayajin. Somos mais do que
+      uma loja: somos um santuário para fãs de Dragon Ball que buscam colecionáveis com alma, estilo e autenticidade.
+      <br><br>
+      Aqui você encontrará diversas action figures Funk Pop! dos personagens mais lendários, coleções exclusivas e
+      lançamentos épicos.
+      <br><br><br>
+      Mais do que vender, queremos conectar. Conectar fãs, histórias, memórias e emoções. Porque sabemos que cada figura
+      representa mais do que um personagem: representa um momento, uma lembrança, uma parte de quem você é.
+    </h3>
+<br><br><br>
+    <!-- Equipe de Criação -->
+    <section class="my-5">
+      <h2 class="text-center mb-4">Nossa Equipe de Criação</h2>
+      <h4 class="text-center mb-5">"Os Guerreiros por Trás da Nossa Loja, Nossa Força está na Criação!"</h4>
+      <div class="row justify-content-center text-center g-4">
+
+        <!-- Cards da equipe -->
+
+        <div class="col-sm-6 col-md-4">
+          <img src="assets/img/equipe1.jpg" class="rounded-circle mb-2" width="120" height="120" alt="Integrante 1">
+          <h5>Erick Silva</h5>
+          <p>Fundador & CEO</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="assets/img/equipe2.jpg" class="rounded-circle mb-2" width="120" height="120" alt="Integrante 2">
+          <h5>Fagner Cardoso</h5>
+          <p>Designer Visual</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="assets/img/equipe3.jpg" class="rounded-circle mb-2" width="120" height="120" alt="Integrante 3">
+          <h5>Luiz Menezes</h5>
+          <p>Desenvolvedor Web</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="assets/img/equipe4.jpg" class="rounded-circle mb-2" width="120" height="120" alt="Integrante 4">
+          <h5>Carlos</h5>
+          <p>Web Designer</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="assets/img/equipe5.jpg" class="rounded-circle mb-2" width="120" height="120" alt="Integrante 5">
+          <h5>Janelson Araújo</h5>
+          <p>Logística & Operações</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="assets/img/equipe6.jpg" class="rounded-circle mb-2" width="120" height="120" alt="Integrante 6">
+          <h5>Ryan</h5>
+          <p>Atendimento ao Cliente</p>
+        </div>
+<br><br>
+        <div class="col-sm-6 col-md-4 integrante-7">
+          <img src="assets/img/equipe7.jpg" class="rounded-circle mb-2" width="120" height="120" alt="Integrante 7">
+          <h5>Gustavo Matos</h5>
+          <p>Fotografia & Edição</p>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+<br><br>
+    <!-- Seção final -->
+    <section class="my-5">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h3 class="mb-3">A energia da Sayajins Store vai além dos produtos</h3>
+          <p>
+            Cada item é uma cápsula de memória, uma explosão de nostalgia e uma ponte direta para o universo Dragon
+            Ball.
+            <br><br>
+            Nossa missão é criar experiências únicas que conectem fãs de todas as gerações.
+          </p>
+          <p>
+            Seja você um colecionador veterano ou alguém que acabou de despertar seu ki, a Sayajins Store é o seu lugar.
+          </p>
+          <div class="mt-4">
+            <a href="index.html#topo" class="btn btn-warning btn-lg d-block mx-auto" style="max-width: 200px;">Saiba
+              mais</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="assets/img/sobre-nos.jpg" alt="Imagem Sayajins Store" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!--Scripts de Transições-->
+
+  <script>
+    
+    // Aplica a animação ao carregar a página
+    document.body.classList.add('fade-in');
+  
+  </script>
+
+<script>
+  const links = document.querySelectorAll('a[href="sobre.html"]');
+
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.remove('fade-in');
+      document.body.style.animation = 'fadeOut 0.5s ease-in-out';
+
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 500);
+    });
+  });
+</script>
+
+<script>
+
+// SWEET ALERT PARA LOGIN
+document.addEventListener('DOMContentLoaded', function () {
+    const loginBtn = document.querySelector('.icon-login');
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                icon: 'success',
+                title: 'Entrar na sua conta',
+                text: 'Bem-vindo de volta!',
+                html:
+                    '<input id="swal-input-email" class="swal2-input" placeholder="E-mail" type="email" style="font-family: \"Eurostile Extended\", Arial, sans-serif;">' +
+                    '<input id="swal-input-password" class="swal2-input" placeholder="Senha" type="password" style="font-family: \"Eurostile Extended\", Arial, sans-serif;">' +
+                    '<div style="margin-top:10px; font-size: 0.95em;">' +
+                    '<a href="cadastro.html" style="color:#ff9800; text-decoration:underline; font-family: \"Eurostile Extended\", Arial, sans-serif;">Não tem cadastro? Cadastre-se</a>' +
+                    '</div>',
+                focusConfirm: false,
+                confirmButtonText: 'Entrar',
+                confirmButtonColor: '#ff9800',
+                background: '#181818',
+                color: '#fff',
+                customClass: {
+                    popup: 'swal2-dragonball',
+                    confirmButton: 'btn-ver-produtos',
+                    title: 'title',
+                },
+                preConfirm: () => {
+                    const email = document.getElementById('swal-input-email').value;
+                    const password = document.getElementById('swal-input-password').value;
+                    if (!email || !password) {
+                        Swal.showValidationMessage('Por favor, preencha todos os campos.');
+                        return false;
+                    }
+                    
+                    // Aqui você pode adicionar lógica de autenticação real
+                    return { email, password };
+                }
+            }).then((result) => {
+                if (result.isConfirmed && result.value) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Login realizado!',
+                        text: 'Bem-vindo de volta!',
+                        confirmButtonColor: '#ff9800',
+                        background: '#181818',
+                        color: '#fff',
+                        customClass: {
+                            popup: 'swal2-dragonball',
+                            confirmButton: 'btn-ver-produtos',
+                            title: 'title',
+                        }
+                    });
+                }
+            });
+        });
+    }
+});
+</script>
+
+
+</body>
+</html>
