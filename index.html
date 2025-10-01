@@ -14,6 +14,8 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Botão Saiba Mais -->
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <!-- BOOTSTRAP ÍCONES -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -152,11 +154,39 @@
       </div>
     </div>
   </main>
+  <!-- Call to Action para 'sobre.html' -->
+  <section class="contato">
+    <div class="interface">
+
+      <article class="txt-contato">
+        <h3>Fale agora com a
+            <span>nossa equipe</span></h3>
+        <p>Quer saber mais sobre nossos produtos ou tem alguma dúvida? Nossa equipe está pronta para ajudar você!</p>
+      </article>
+
+      <article class="icons-contato">
+        <a href="#">
+          <button><i class="bi bi-whatsapp"></i><p>Chamar no WhatsApp</p></button>
+        </a>
+        <a href="#">
+          <button><i class="bi bi-envelope-at-fill"></i><p>Enviar e-mail</p></button>
+        </a>
+        <a href="#">
+          <button><i class="bi bi-telephone-fill"></i><p>Ligar</p></button>
+        </a>
+        <a href="#">
+          <button><i class="bi bi-ui-checks"></i></i><p>Formulário</p></button>
+        </a>
+      </article>
+
+    </div>
+  </section>
 
   <footer class="footer-custom">
     <div class="footer-content">
       <div class="footer-logo">
-        <img src="assets/images/Dragon_Ball_Z_logo.svg" alt="Logo Sayajins Store" style="height:32px; vertical-align:middle; margin-right:8px;">
+        <img src="assets/images/Dragon_Ball_Z_logo.svg" alt="Logo Sayajins Store"
+          style="height:32px; vertical-align:middle; margin-right:8px;">
         <span class="footer-title">Sayajins Store</span>
       </div>
       <div class="footer-social">
@@ -173,10 +203,10 @@
 
   <script src="assets/js/main.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const btnVerProdutos = document.querySelector('.custom-btn.btn-12');
       if (btnVerProdutos) {
-        btnVerProdutos.addEventListener('click', function(e) {
+        btnVerProdutos.addEventListener('click', function (e) {
           e.preventDefault();
           const mainSection = document.querySelector('main.main-custom');
           if (mainSection) {
