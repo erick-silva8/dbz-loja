@@ -1,9 +1,14 @@
-/* Reset básico */
+/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     font-family: 'Eurostile Extended', 'Magistral', sans-serif;
@@ -128,7 +133,7 @@ body {
     background: linear-gradient(90deg, #F28907 60%, #F25C05 100%);
 }
 
-/* Header */
+/* HEADER */
 .header-custom {
     position: relative;
     min-height: 100vh;
@@ -305,7 +310,7 @@ body {
     pointer-events: auto;
 }
 
-/* Main e grid de produtos */
+/* MAIN E GRID DE PRODUTOS */
 .main-custom {
     max-width: 1200px;
     margin: 2rem auto;
@@ -483,7 +488,7 @@ section.sobre {
     margin-top: 0;
 }
 
-.sobre > .overlay {
+.sobre>.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -493,7 +498,7 @@ section.sobre {
     z-index: 1;
 }
 
-.sobre > .interface {
+.sobre>.interface {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -532,6 +537,7 @@ section.sobre {
 .link_wrapper {
     position: relative;
 }
+
 .about {
     display: block;
     width: 250px;
