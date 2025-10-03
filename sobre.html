@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <!-- Header Dragon Ball Z -->
+    <!-- HEADER -->
     <header class="header-custom">
         <video class="banner-video-bg" src="assets/videos/banner-video.mp4" autoplay muted loop playsinline></video>
         <!-- Navbar personalizada -->
@@ -34,7 +34,7 @@
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="sobre.html">Sobre</a>
-                    <a href="cadastro.html">Contato</a>
+                    <a href="index.html#contato">Contato</a>
                 </div>
                 <div class="actions">
                     <a href="#" class="icon-login" title="Login"><i class='bx bx-log-in'></i></a>
@@ -42,6 +42,8 @@
                 </div>
             </div>
         </nav>
+
+        <!-- MAIN (CONTEÚDO PRINCIPAL - SOBRE-NÓS) -->
         <main class="container my-4">
             <section class="sobre-intro">
                 <div class="texto">
@@ -100,9 +102,9 @@
                     </div>
 
                     <div class="card-equipe">
-                        <img src="#" alt="Integrante 3">
+                        <img src="/assets/images/luiz.jpg" alt="Integrante 3">
                         <h5>Luiz Menezes</h5>
-                        <a href="/assets/images/luiz.jpg" target="_blank" rel="noopener">
+                        <a href="#" target="_blank" rel="noopener">
                             <button class="custom-btn btn-12"><span>LinkedIn</span><span><i class='bx bxl-linkedin'></i></span></button>
                         </a>
                     </div>
@@ -146,11 +148,12 @@
 
             <br><br>
         </main>
+        <!-- FIM DA MAIN (CONTEÚDO PRINCIPAL - SOBRE-NÓS) -->
+        
     </header>
+    <!-- FIM DA HEADER -->
 
-    <!-- Conteúdo principal -->
-
-
+    <!-- FOOTER -->
     <footer class="footer-custom">
         <div class="footer-content">
             <div class="footer-logo">
@@ -169,8 +172,11 @@
             </div>
         </div>
     </footer>
+    <!-- FIM DO FOOTER -->
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/carrinho.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const btnVerProdutos = document.querySelector('.custom-btn.btn-12');

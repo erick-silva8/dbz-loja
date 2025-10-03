@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Sayajins Store</title>
-    <link rel="stylesheet" href="assets/css/style-cadastro.css">
+    <link rel="stylesheet" href="assets/css/style-login.css">
     <!-- FONTE 'EUROSTILE EXTENDED' -->
     <link href="https://use.typekit.net/gvp4xoa.css" rel="stylesheet" />
     <!-- BOX ICONS -->
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="/assets/images/dbz-icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body onload="dicionario()">
     <!-- HEADER -->
     <header class="header-custom">
         <video class="banner-video-bg" src="assets/videos/banner-video.mp4" autoplay muted loop playsinline></video>
@@ -45,44 +45,32 @@
     </header>
     <!-- FIM DO HEADER -->
 
-    <!-- MAIN (CONTEÚDO PRINCIPAL - CADASTRO) -->
-    <main class="cadastro-main">
-        <div class="cadastro-container">
-            <h2>Criar Conta na <span>Sayajins Store</span></h2>
-            <form id="cadastro-form">
+    <!-- MAIN (CONTEÚDO PRINCIPAL - LOGIN) -->
+    <main class="login-main">
+        <div class="login-container">
+            <h2>Entrar na <span>Sayajins Store</span></h2>
+            <form id="loginForm">
                 <div class="form-group">
-                    <label for="username">Nome</label>
-                    <input type="text" id="username" placeholder="Digite seu nome" required>
-                </div><br>
+                    <label for="loginEmail">E-mail</label>
+                    <input type="email" id="loginEmail" required placeholder="Digite seu e-mail">
+                </div>
                 <div class="form-group">
-                    <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" placeholder="Digite seu CPF" required>
-                </div><br>
+                    <label for="loginSenha">Senha</label>
+                    <input type="password" id="loginSenha" required placeholder="Digite sua senha">
+                </div>
                 <div class="form-group">
-                    <label for="usuario">Email</label>
-                    <input type="text" id="usuario" placeholder="Digite seu email" required>
-                </div><br>
-                <div class="form-group">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" placeholder="Digite sua senha" required>
-                </div><br>
-                <div class="form-group">
-                    <label for="confirm-password">Confirmar Senha</label>
-                    <input type="password" id="confirm-password" placeholder="Digite sua senha" required>
-                </div><br>
-                <div class="form-group">
-                    <div class="btn btn-three" onclick="document.getElementById('cadastro-form').requestSubmit()">
-                        <span>CADASTRAR</span>
+                    <div class="btn btn-three" onclick="logar()">
+                        <span>ENTRAR</span>
                     </div>
                 </div>
             </form>
             <p class="signup-text">
-                Já tem uma conta? <a href="login.html">Faça login aqui</a>
+                Não tem conta? <a href="cadastro.html">Cadastre-se aqui</a>
             </p>
         </div>
     </main>
-    <!-- FIM DA MAIN (CONTEÚDO PRINCIPAL - CADASTRO) -->
 
+    <!-- FIM DA MAIN (CONTEÚDO PRINCIPAL - LOGIN) -->
 
     <!-- FOOTER -->
     <footer class="footer-custom">
@@ -108,22 +96,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/login.js"></script>
     <script src="assets/js/carrinho.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const btnVerProdutos = document.querySelector('.custom-btn.btn-12');
-            if (btnVerProdutos) {
-                btnVerProdutos.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const mainSection = document.querySelector('main.main-custom');
-                    if (mainSection) {
-                        mainSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-            }
-        });
-    </script>
-
-    <script src="/assets/JS/cadastro.js"></script>
 </body>
 
 </html>
