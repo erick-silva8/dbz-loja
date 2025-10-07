@@ -477,7 +477,7 @@ p {
 /* SEÇÃO 'SOBRE' */
 section.sobre {
     height: 600px;
-    background-image: url(assets/images/dbz-wallpaper.png);
+    background-image: url(../images/dbz-wallpaper.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
